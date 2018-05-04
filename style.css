@@ -1,0 +1,38 @@
+
+/***************************************/
+.prg-border-purple{
+  border-radius: 15px;
+  width: 150px;
+  text-align: center;
+  background-color: #9365B8;
+  padding: 10px;
+  cursor: pointer;
+
+}
+
+.prg-border-red{
+  border-radius: 15px;
+  width: 150px;
+  text-align: center;
+  background-color: #EB6B56;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prg-border-green{
+  border-radius: 15px;
+  width: 150px;
+  text-align: center;
+  background-color: #61BD6D;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prg-border-yellow{
+  border-radius: 15px;
+  width: 150px;
+  text-align: center;
+  background-color: #F7DA64;
+  padding: 10px;
+  cursor: pointer;
+}

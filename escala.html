@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Escala Richter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="jquery-3.2.1.js"></script>
+    <script src="funcoes2.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1 class="jumbotron text-center"> Exercícios</h1>
+    </div>
+    <nav class="navbar navbar-inverse container-fluid">
+      <div class="navbar-header">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Escala Richter</a></li>
+          <li><a href="imc2	.html">Calculo de IMC</a></li>
+          <li><a href="atividades.html">Jogos Didáticos</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="row container">
+      <div class="col-md-12" align="center">
+        <table class="table table-striped table-bordered table-hover" style="width: 50%">
+          <thead>
+            <tr class="bg-primary">
+              <th>Magnitude Richter</th>
+              <th>Efeitos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Menor que 3,5</th>
+              <th>Geralmente não sentido, mas gravado.</th>
+            </tr>
+            <tr>
+              <th>Entre 3,5 e 5,4</th>
+              <th>Às vezes sentido, mas raramente causa danos.</th>
+            </tr>
+            <tr>
+              <th>Entre 5,5 e 6,0</th>
+              <th>No máximo causa pequenos danos a prédios bem construídos, mas pode danificar seriamente casas mal construídas em regiões próximas.</th>
+            </tr>
+            <tr>
+              <th>Entre 6,1 e 6,9</th>
+              <th>Pode ser destrutivo em áreas em torno de até 100 km do epicentro.</th>
+            </tr>
+            <tr>
+              <th>Entre 7,0 e 7,9</th>
+              <th>Grande terremoto. Pode causar sérios danos numa grande faixa.</th>
+            </tr>
+            <tr>
+              <th>8,0 ou mais</th>
+              <th>Enorme terremoto. Pode causa graves danos em muitas áreas mesmo que estejam a centenas de quilômetros.</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row container">
+      <div class="col-md-6">
+        <h2>Cálculo Escala Richter</h2>
+        <form>
+          <div class="form-group" id="amplitude">
+            <label for="amplitude">Amplitude (mm): </label>
+            <input type="text" class="form-control" name="amplitude">
+            <div class="alert alert-danger fade in" id="alertaAmplitude" style="display: none">
+              <strong>Erro! </strong>Você informou um dado inválido.
+              </div>
+          </div>
+          <div class="form-group" id="intervalo">
+            <label for="intervalo">Intervalo de Tempo (s): </label>
+            <input type="text" class="form-control" name="intervalo">
+            <div class="alert alert-danger fade in" id="alertaIntervalo" style="display: none">
+              <strong>Erro! </strong>Você informou um dado inválido.
+            </div>
+          </div>
+          <div class="" align="right">
+            <button type="button" class="btn btn-success" id="btnCalcular" name="button">Calcular Escala Richter</button>
+            <input type="reset" id="btnLimpar" value="Limpar campos" class="btn btn-info"><br><br>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h2>Resultado</h2>
+        <textarea type="text" id="resultado" class="form-control" disabled="disabled" style="height: 180px; width: 650px"></textarea>
+      </div>
+    </div>
+  </body>
+</html>
